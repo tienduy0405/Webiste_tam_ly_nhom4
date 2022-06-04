@@ -1,0 +1,29 @@
+
+
+.resource-title {
+    padding-top: 1.5rem;
+}
+
+/* ================= Carousel ================= */
+.carousel {
+    margin: 1.5rem auto;
+}
+
+.carousel .carousel-inner .carousel-item img {
+    border-radius: 1rem;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.121);
+    backdrop-filter: blur(20px);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.carousel .carousel-inner {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+
+
+
+/* ============ End carousel ============= */

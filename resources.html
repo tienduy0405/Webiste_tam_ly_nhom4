@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suoi Nguon</title>
+    <link rel="stylesheet" href="header.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="resources.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="resource.js"></script>
+    <!-- phong chu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- phong chu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spline+Sans+Mono:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+     <header id="header">
+        <!-- Header  -->
+      <nav id="navbar" class="navbar navbar-expand-lg" >
+        <div class="container-fluid">
+
+            <button id="chgOnScr" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span id="icon" class="navbar-toggler-icon" style="font-size:x-small"></span> <span style="font-size:smaller; color: black;">Menu</span>
+            </button>
+            <div class="d-flex">
+            <a href="./index.html" class="logo align-self-center"  id="logo">
+                <img src="./Logo.png" style="height: 40px; width: 50px" alt="">
+            </a>
+
+            <a id="brand" class="navbar-brand" href="index.html"  style="font-size: 2em;font-family: 'Lobster Two', cursive; color: #634700;">Light house</a>
+        </div>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <p class="mx-auto fs-2" style="font-family: 'Lobster Two'">Light house</p>
+                </div>
+                <div class="offcanvas-body ">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto text-center">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./blog.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="blog.html">Trầm cảm</a></li>
+                                <li><a class="dropdown-item" href="blog.html">Kỹ năng sống</a></li>
+                                <li><a class="dropdown-item" href="blog.html">Sợ hãi và giải thoát</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="quote.html">Ngẫm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="community.html">Cộng Đồng </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="resources.html">Suối Nguồn</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                
+              
+            </div>
+        </div>
+    </nav>
+    <script>
+                // Scroll down 
+        window.onscroll = function () { myToggle() };
+
+        function myToggle() {
+            if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+                document.getElementById("chgOnScr").className = "btn tr";
+                document.getElementById("navbar").className = "navbar bg-light fixed-top";
+                document.getElementById("logo").className = "logo align-self-center";
+
+                document.getElementById("icon").className.style = "font-size: 2em;";
+
+
+            } else {
+                document.getElementById("chgOnScr").className = "navbar-toggler";
+                document.getElementById("navbar").className = "navbar navbar-expand-lg bg-light";
+                document.getElementById("brand").className = "navbar-brand";
+                document.getElementById("icon").className = "navbar-toggler-icon";
+                document.getElementById("icon").className.style = "font-size: 4em;";
+
+            }
+        }
+    </script>
+
+    <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+            integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+            crossorigin="anonymous"></script> 
+
+        <!-- End header -->
+    </header>
+
+
+    <!-- ============== Resources =================-->
+    <section class="resouces ">
+
+        <div class="content container d-flex flex-column align-items-lg-stretch">
+            <!-- =========== Intro =========== -->
+            <div class="resource-title text-center">
+                <h1>Suối Nguồn</h1>
+                <p><i>Đi sâu hơn vào thế giới của người trầm cảm</i></p>
+            </div>
+            <!-- ============== Carousel ============ -->
+            <div id="carouselForRsesource" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselForRsesource" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselForRsesource" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselForRsesource" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselForRsesource" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselForRsesource" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselForRsesource" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselForRsesource" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselForRsesource" data-bs-slide-to="7"
+                        aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#carouselForRsesource" data-bs-slide-to="8"
+                        aria-label="Slide 9"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100"
+                            src="https://images.everydayhealth.com/images/coping-with-depression-a-guide-to-good-treatment-1440x810.jpg"
+                            alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <a target="_blank" style="text-decoration: none; color: white"
+                                href="https://tamlyhoctoipham.com/10-dau-hieu-pho-bien-cua-chung-tram-cam-tham-lang-perfectly-hidden-depression">
+                                <span>
+                                    <h5>10 dấu hiệu phổ biến của chứng 'trầm cảm thầm lặng' (Perfectly Hidden
+                                        Depression)
+                                    </h5>
+                                </span>
+                            </a>
+                            <p>Nguon: tamlyhoctoipham.com</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://nhatamlyhoc.com/wp-content/uploads/2020/01/Depression_GettyImages-947804676.jpg"
+                            alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <a target="_blank" style="text-decoration: none; color: white"
+                                href="https://acrazymind.vn/minh-da-danh-mat-nhung-gi-ke-tu-khi-bi-tram-camfy8itj">
+                                <span>
+                                    <h5>Mình đã đánh mất những gì kể từ khi bị trầm cảm</h5>
+                                </span>
+                            </a>
+                            <p>Nguon: acrazymind.vn</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://wallpapercave.com/wp/wp3386109.jpg"
+                            alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <a target="_blank" style="text-decoration: none; color: white"
+                                href="https://tamlyhoctoipham.com/lieu-thuoc-bi-mat-cho-benh-tram-cam">
+                                <span>
+                                    <h5>Liều thuốc bí mật cho bệnh trầm cảm</h5>
+                                </span>
+                            </a>
+                            <p>Nguon: tamlyhoctoipham.com</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://img.freepik.com/free-vector/homeless-people-cartoon-composition-with-sad-poor-homeless-man-sits-ground-with-nameplate-need-help_1284-33043.jpg?w=2000"
+                            alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <a target="_blank" style="text-decoration: none; color: white"
+                                href="https://open.spotify.com/episode/3pDYWgf9Nw3FblPqFxD1yyj">
+                                <span>
+                                    <h5>#48:On Depression - Nói về trầm cảm</h5>
+                                </span>
+                            </a>
+                            <p>Nguon: acrazymind.vn</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://images.everydayhealth.com/images/coping-with-depression-a-guide-to-good-treatment-1440x810.jpg"
+                            alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <a target="_blank" style="text-decoration: none; color: white"
+                                href="https://soundcloud.com/nhacgay/ipoxgay-so2">
+                                <span>
+                                    <h5>Số 2 — InPsychOut Kể Chuyện Gãy: Bàn về Trầm Cảm</h5>
+                                </span>
+                            </a>
+                            <p>Nguon: soundcloud.com</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://nhatamlyhoc.com/wp-content/uploads/2020/01/Depression_GettyImages-947804676.jpg"
+                            alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <a target="_blank" style="text-decoration: none; color: white"
+                                href="https://open.spotify.com/episode/1h4pRIjYC2qG2nVj7bSCNK">
+                                <span>
+                                    <h5>"Em đã từng bị trầm cảm..." - M2T13</h5>
+                                </span>
+                            </a>
+                            <p>Nguon: open.spotify.com</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://i.pinimg.com/originals/8e/c1/b1/8ec1b152ed90bd452d77ed83e781e595.png"
+                            alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <a target="_blank" style="text-decoration: none; color: white"
+                                href="https://www.youtube.com/watch?v=dqBRN7aV9Cc">
+                                <span>
+                                    <h5>Tôi có một con chó mực, tên nó là trầm cảm.</h5>
+                                </span>
+                            </a>
+                            <p>Nguon: youtube.com</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://nhatamlyhoc.com/wp-content/uploads/2020/01/Depression_GettyImages-947804676.jpg"
+                            alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <a target="_blank" style="text-decoration: none; color: white"
+                                href="https://www.youtube.com/watch?v=n83Dd3oNa1A">
+                                <span>
+                                    <h5>9 Dấu hiệu Trầm cảm nặng |Psych2Go Vietnam</h5>
+                                </span>
+                            </a>
+                            <p>Nguon: youtube.com</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://images.everydayhealth.com/images/coping-with-depression-a-guide-to-good-treatment-1440x810.jpg"
+                            alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <a target="_blank" style="text-decoration: none; color: white"
+                                href="https://www.youtube.com/watch?v=Xu1FMCxoEFc">
+                                <span>
+                                    <h5>Understanding & Conquering Depression | Huberman Lab Podcast #34</h5>
+                                </span>
+                                <p>Nguon: youtube.com</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <button class="carousel-control-prev dark " type="button" data-bs-target="#carouselForRsesource"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next dark" type="button" data-bs-target="#carouselForRsesource"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+
+        </div>
+    </section>
+    <!-- ====================== End resources ==================== -->
+
+
+    <!-- Js bootstrap -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>`
